@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# Connect
+CS 4550 Project Repo
+Project Description Google Doc: https://docs.google.com/document/d/14wvrdi5LFQrQu0e2rC4aSab5JPTbyecLGEf5Dn0HXvc/edit?usp=sharing
+>>>>>>> e9ac97e2d2fe3f8b8fa36c6571a2b9f0ea43efab
