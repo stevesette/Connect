@@ -3,8 +3,8 @@ import service from "./ProfileService"
 
 class ProfileContainer extends React.Component {
   state = {
-    user: [],
-    username: "nikhil_akenapalli"
+    user: {},
+    username: "mica.saan"
   }
 
   componentDidMount() {
