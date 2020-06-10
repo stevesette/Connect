@@ -7,7 +7,7 @@ class ProfileContainer extends React.Component {
     username: "nikhil_akenapalli",
     followers: 0,
     following: 0,
-    posts: []
+    posts: [[]]
   }
 
   componentDidMount() {
@@ -26,6 +26,7 @@ class ProfileContainer extends React.Component {
     
     return(
       <div>
+        <img src={this.state.user.profile_pic_url} alt="profile_picture"/>
         <h1>{this.state.user.full_name}</h1>
         <h3>{this.state.user.biography}</h3>
         <p>
