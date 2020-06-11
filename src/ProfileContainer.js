@@ -4,10 +4,10 @@ import service from "./ProfileService"
 class ProfileContainer extends React.Component {
   state = {
     user: [],
-    username: "nikhil_akenapalli",
+    username: this.props.match.params.username,
     followers: 0,
     following: 0,
-    posts: [[]]
+    posts: []
   }
 
   componentDidMount() {

@@ -2,11 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ProfileContainer from "./ProfileContainer"
+import RouterComponent from "./RouterComponent"
 
 function App() {
   return (
-    <ProfileContainer/>
+    <RouterComponent/>
   );
 }
 
