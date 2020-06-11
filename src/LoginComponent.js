@@ -17,7 +17,8 @@ class LoginComponent extends React.Component {
               username: userInput
             })
           }}
-          value={this.state.username}/>
+          value={this.state.username}
+          placeholder="Username"/>
         <Link to={`/profile/${this.state.username}`}>
           Login
         </Link>

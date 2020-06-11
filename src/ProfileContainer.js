@@ -1,5 +1,6 @@
 import React from "react"
 import service from "./ProfileService"
+import {Link} from "react-router-dom"
 
 class ProfileContainer extends React.Component {
   state = {
@@ -37,6 +38,9 @@ class ProfileContainer extends React.Component {
 
         <div>
           <h5>Recent Post</h5>
+          <Link to='/'>
+            Back
+          </Link>
         </div>
       </div>
     )
