@@ -2,12 +2,12 @@ import React from "react"
 import {Link} from "react-router-dom"
 
 const HomeComponent = () => 
-  <div>
+  <div id="pie">
     <h1>Home</h1>
     <Link to="/login">
       Login
     </Link>
-    <Link to="/register">
+    <Link id ="ok" to="/register">
       Register
     </Link>
   </div>
