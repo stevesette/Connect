@@ -2,6 +2,8 @@ import React from "react"
 import {BrowserRouter, Route} from "react-router-dom";
 import LoginComponent from "./LoginComponent"
 import ProfileContainer from "./ProfileContainer"
+import HomeComponent from "./HomeComponent"
+import RegisterComponent from "./RegisterComponent";
 
 class RouterComponent extends React.Component {
   render() {
@@ -11,7 +13,19 @@ class RouterComponent extends React.Component {
           <Route
             path='/'
             exact={true}
+            component={HomeComponent}
+          />
+
+          <Route
+            path='/login'
+            exact={true}
             component={LoginComponent}
+          />
+
+          <Route
+            path='/register'
+            exact={true}
+            component={RegisterComponent}
           />
 
           <Route
