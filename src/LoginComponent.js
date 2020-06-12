@@ -13,7 +13,7 @@ class LoginComponent extends React.Component {
   }
 
   login = (username) => {
-    if(UserService.verifyUser(username)) {
+    if(UserService.existingUser(username)) {
       this.props.history.push('/profile/' + username)
     } else {
       console.log("user " + username + " not found")
@@ -33,7 +33,7 @@ class LoginComponent extends React.Component {
           }}
           value={this.state.username}
           placeholder="Username"/>
-        <button onClick={this.login(this.state.username)}>
+        <button onClick={() => this.login(this.state.username)}>
           Login
         </button>
         <Link to='/'>

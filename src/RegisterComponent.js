@@ -24,7 +24,11 @@ class RegisterComponent extends React.Component {
           }}
           value={this.state.username}
           placeholder="Username"/>
-        <button onClick={UserService.addUser(this.state.username)}>
+        <button onClick={() => {
+          if(UserService.addUser(this.state.username)) {
+            this.props.history.push('/profile/' + this.state.username)
+          }
+          }}>
           Register
         </button>
         <Link to='/'>
