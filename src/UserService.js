@@ -1,8 +1,4 @@
-const users = [
-  {
-    username: "nikhil_akenapalli"
-  }
-]
+const users = []
 
 const addUser = (username) => {
   console.log("adding user " + username)
@@ -13,7 +9,7 @@ const addUser = (username) => {
     console.log(users)
     return true
   } else {
-    alert("User " + username + "already exists. Try logging in")
+    alert("User " + username + " already exists. Try logging in")
     return false
   }
 }
