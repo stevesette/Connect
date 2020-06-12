@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("connectBG.jpg");
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+#pie {
+font-family: Helvetica;
+box-shadow:rgba(0,0,0,0.06) 10px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.226);
+  border-radius: 15px;
+  margin-left:200px;
+  padding: 50px;
+  margin-top:130px;
+  width:400px;
+  height:auto;
+  font-family: bitxmap;
+}
+
+#ok {
+  padding-left: 20px;
 }

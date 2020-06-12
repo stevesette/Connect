@@ -24,6 +24,8 @@ class ProfileContainer extends React.Component {
 
   render() {
     console.log(this.state.posts)
+    console.log(this.state.posts[1])
+    // service for the posts just as the same for the user
     
     return(
       <div>

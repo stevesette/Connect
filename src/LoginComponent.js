@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import Button from 'react-bootstrap/Button';
 
 class LoginComponent extends React.Component {
   state = {
@@ -8,7 +9,7 @@ class LoginComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id= "pie">
         <h1>Login</h1>
         <input
           onChange={(event) => {
@@ -19,7 +20,7 @@ class LoginComponent extends React.Component {
           }}
           value={this.state.username}
           placeholder="Username"/>
-        <Link to={`/profile/${this.state.username}`}>
+        <Link id = "ok" to={`/profile/${this.state.username}`}>
           Login
         </Link>
       </div>
