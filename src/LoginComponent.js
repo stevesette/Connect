@@ -16,7 +16,7 @@ class LoginComponent extends React.Component {
     if(UserService.existingUser(username)) {
       this.props.history.push('/profile/' + username)
     } else {
-      console.log("user " + username + " not found")
+      alert("user " + username + " not found. Try registering")
     }
   }
 

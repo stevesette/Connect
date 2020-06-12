@@ -27,6 +27,8 @@ class RegisterComponent extends React.Component {
         <button onClick={() => {
           if(UserService.addUser(this.state.username)) {
             this.props.history.push('/profile/' + this.state.username)
+          } else {
+            alert("User " + this.state.username + " already exists. Try logging in")
           }
           }}>
           Register

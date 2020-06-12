@@ -9,7 +9,6 @@ const addUser = (username) => {
     console.log(users)
     return true
   } else {
-    alert("User " + username + " already exists. Try logging in")
     return false
   }
 }
