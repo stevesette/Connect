@@ -1,10 +1,11 @@
 import React from "react"
 import service from "./ProfileService"
+import {Link} from "react-router-dom"
 
 class ProfileContainer extends React.Component {
   state = {
     user: [],
-    username: "nikhil_akenapalli",
+    username: this.props.match.params.username,
     followers: 0,
     following: 0,
     posts: []
@@ -22,6 +23,7 @@ class ProfileContainer extends React.Component {
   }
 
   render() {
+    console.log(this.state.posts)
     console.log(this.state.posts[1])
     // service for the posts just as the same for the user
     
@@ -38,6 +40,9 @@ class ProfileContainer extends React.Component {
 
         <div>
           <h5>Recent Post</h5>
+          <Link to='/'>
+            Back
+          </Link>
         </div>
       </div>
     )
