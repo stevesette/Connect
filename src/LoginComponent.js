@@ -5,19 +5,11 @@ import UserService from "./UserService"
 
 class LoginComponent extends React.Component {
   state = {
-    username: ''
+    username: '',
+    password: ''
   }
 
   componentDidMount() {
-    console.log(UserService.users)
-  }
-
-  login = (username) => {
-    if(UserService.existingUser(username)) {
-      this.props.history.push('/profile/' + username)
-    } else {
-      alert("user " + username + " not found. Try registering")
-    }
   }
 
   render() {
@@ -25,15 +17,21 @@ class LoginComponent extends React.Component {
       <div id= "pie">
         <h1>Login</h1>
         <input
-          onChange={(event) => {
-            const userInput = event.target.value
-            this.setState({
-              username: userInput
-            })
-          }}
+          className="form-control"
+          onChange={(event) => {this.setState({username: event.target.value})}}
           value={this.state.username}
           placeholder="Username"/>
-        <button onClick={() => this.login(this.state.username)}>
+        <input
+          className="form-control"
+          onChange={(event) => {this.setState({password: event.target.value})}}
+          value={this.state.password}
+          placeholder="Password"/>
+        <button
+          className="btn btn-primary" 
+          onClick={() => {
+            UserService.loginUser(this.state.username, this.state.password)
+              .then(status => this.props.history.push('/profile/' + this.state.username))
+          }}>
           Login
         </button>
         <Link to='/'>
