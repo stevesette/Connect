@@ -6,3 +6,9 @@ const findUser = (username) =>
 export default {
   findUser
 }
+
+// find posts service
+
+const findPostsForUser = (username) =>
+ fetch("https://www.instagram.com/" + username + "/media/recent")
+    .then(response => response.json())
