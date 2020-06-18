@@ -17,7 +17,7 @@ const HomeComponent = () =>
     <span class="th th-peach-o"></span>
 </div>
 <nav>
-    <a href="/">ihome</a>
+    <a href="/">home</a>
     <a href="/login">login</a>
     <a href="/register">register</a>
     <a href="/privacy">privacy</a>

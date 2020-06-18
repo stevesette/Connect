@@ -15,7 +15,7 @@ class RegisterComponent extends React.Component {
     return (
       <div id= "pie">
         <h1>Register</h1>
-        <input
+        <input 
           onChange={(event) => {
             const userInput = event.target.value
             this.setState({
@@ -27,7 +27,7 @@ class RegisterComponent extends React.Component {
         <button onClick={UserService.addUser(this.state.username)}>
           Register
         </button>
-        <Link to='/'>
+        <Link  id = "ok" to='/'>
           Back
         </Link>
       </div>
