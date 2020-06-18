@@ -46,3 +46,4 @@ const HomeComponent = () =>
 </div>
 
 export default HomeComponent
+ster

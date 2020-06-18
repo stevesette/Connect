@@ -33,21 +33,18 @@ class LoginComponent extends React.Component {
           onChange={(event) => {this.setState({username: event.target.value})}}
           value={this.state.username}
           placeholder="Username"/>
-<<<<<<< HEAD
-        <button onClick={this.login(this.state.username)}>
-=======
+        {/*<button onClick={this.login(this.state.username)}>*/}
         <input
           className="form-control"
           onChange={(event) => {this.setState({password: event.target.value})}}
           value={this.state.password}
           placeholder="Password"/>
         <button
-          className="btn btn-primary" 
+          className="btn btn-primary"
           onClick={() => {
             UserService.loginUser(this.state.username, this.state.password)
               .then(status => this.props.history.push('/profile/' + this.state.username))
           }}>
->>>>>>> 704fbb55e30139e7225773f1705adaf30673b0d6
           Login
         </button>
         <Link to='/'>
@@ -56,7 +53,7 @@ class LoginComponent extends React.Component {
       </div>
     )
   }
-  
+
 }
 
 export default LoginComponent
