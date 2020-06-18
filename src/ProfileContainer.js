@@ -52,7 +52,7 @@ class ProfileContainer extends React.Component {
               {this.state.posts.map(post =>
                 <div key={post.node.id}>
                     <a>{post.node.shortcode}</a>
-                    <img src={post.node.thumbnail_src} alt={post.node.id}/>
+                    <img src={post.node.display_url} alt={post.node.id} width="300" height="300"/>
                     {post.node.edge_media_to_caption.edges.length !== 0 &&
                      <a>{post.node.edge_media_to_caption.edges[0].node.text}</a>
                     }
