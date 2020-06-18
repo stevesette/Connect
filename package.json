@@ -11,13 +11,10 @@
     "@testing-library/user-event": "^7.2.1",
     "apollo-boost": "^0.4.9",
     "bootstrap": "^4.5.0",
-<<<<<<< HEAD
     "i": "^0.3.6",
     "npm": "^6.14.5",
-=======
     "graphql": "^15.1.0",
     "graphql-tag": "^2.10.3",
->>>>>>> 704fbb55e30139e7225773f1705adaf30673b0d6
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-bootstrap": "^1.0.1",
