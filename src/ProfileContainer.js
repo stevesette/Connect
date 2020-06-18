@@ -32,6 +32,7 @@ class ProfileContainer extends React.Component {
   render() {
     console.log(this.state.posts)
     console.log(this.state.posts[1])
+
     // service for the posts just as the same for the user
     
     return(
@@ -48,6 +49,15 @@ class ProfileContainer extends React.Component {
 
           <div>
             <h5>Recent Post</h5>
+              {this.state.posts.map(post =>
+                <div key={post.node.id}>
+                    <a>{post.node.shortcode}</a>
+                    <img src={post.node.thumbnail_src} alt={post.node.id}/>
+                    {post.node.edge_media_to_caption.edges.length !== 0 &&
+                     <a>{post.node.edge_media_to_caption.edges[0].node.text}</a>
+                    }
+                </div>
+              )}
             <Link to='/'>
               Back
             </Link>

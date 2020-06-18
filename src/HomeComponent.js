@@ -10,6 +10,9 @@ const HomeComponent = () =>
     <Link to="/register">
       Register
     </Link>
+      <Link to="/profile/mica.saan">
+          test profile
+      </Link>
   </div>
 
 export default HomeComponent
