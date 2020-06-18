@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+<<<<<<< HEAD
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
@@ -44,5 +45,21 @@ const HomeComponent = () =>
    
 </div>
 </div>
+=======
+
+const HomeComponent = () => 
+  <div>
+    <h1>Home</h1>
+    <Link to="/login">
+      Login
+    </Link>
+    <Link to="/register">
+      Register
+    </Link>
+      <Link to="/profile/mica.saan">
+          test profile
+      </Link>
+  </div>
+>>>>>>> 704fbb55e30139e7225773f1705adaf30673b0d6
 
 export default HomeComponent
