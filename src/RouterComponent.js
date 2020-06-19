@@ -40,6 +40,7 @@ class RouterComponent extends React.Component {
             path='/profile/:username/:postid'
             exact={true}
             component={DetailsComponent}
+            />
           <Route
             path='/connect'
             exact={true}
