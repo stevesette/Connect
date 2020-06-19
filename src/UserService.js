@@ -1,6 +1,6 @@
-const addUser = (username, password) =>
+const addUser = (username, password, type) =>
   fetch("http://localhost:8080/api/register", {
-      body: JSON.stringify({username: username, password: password}),
+      body: JSON.stringify({username: username, password: password, type: type}),
       headers: {
         'content-type': 'application/json'
       },

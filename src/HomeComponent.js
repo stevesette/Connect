@@ -78,6 +78,7 @@ class HomeComponent extends React.Component {
               this.state.loggedIn &&
               <div>
                 <h5>Logged in as {this.state.currentUser.username}</h5>
+                <h6>{this.state.currentUser.type}</h6>
                 <Link to="/connect">
                   Connect
                 </Link>
