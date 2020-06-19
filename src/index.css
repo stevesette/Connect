@@ -74,7 +74,7 @@ box-shadow:rgba(0,0,0,0.06) 10px 10px;
      
 #s-m-t-tooltip {max-width:300px;margin-top:-40px;margin-left:-35px;font-size:10px;letter-spacing:1px;text-transform:uppercase;text-align:center;z-index:999999;}
 
-body {font-family:var(--body-font);font-size:var(--text-size);color:var(--body);background-color:#fff; text-align:justify;line-height:1.65em;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-animation: fadein 1.5s;-moz-animation:fadein 1.5s;animation:fadein 1.5s;}
+body {font-family:var(--body-font);font-size:var(--text-size);color:var(--body);background-color:#fff; text-align:justify;line-height:1.65em;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-animation: fadein 1.5s;-moz-animation:fadein 1.5s;animation:fadein 1.5s;}
 
 a {color:var(--body);text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;} a:hover {color:var(--heading);}
 
