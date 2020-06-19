@@ -19,8 +19,21 @@ const loginUser = (username, password) =>
       credentials: "include"
     }).then(response => response.json())
 
+const getAllUsers = () =>
+  fetch("http://localhost:8080/api/users")
+    .then(response => response.json())
+
+const getCurrentUser = () =>
+  fetch("http://localhost:8080/api/profile")
+    .then(response => response.json())
+
+const logout = () =>
+  fetch("http://localhost:8080/api/logout")
 
 export default {
   addUser,
-  loginUser
+  loginUser,
+  getAllUsers,
+  getCurrentUser,
+  logout
 }

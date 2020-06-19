@@ -81,6 +81,7 @@ a {color:var(--body);text-decoration:none;-webkit-transition: all 0.3s ease-in-o
 h1 {font-family:'Playfair Display';font-size:35px;font-weight:400;color:var(--heading);padding:0px;margin:0px 0px 25px 0px;}
 
 #bio {display:block;position:absolute;width:500px;height:300px;margin:100px;left:15%;z-index:1;} #bio a {border-bottom:1px solid var(--body);}
+#main-content {display:block;position:absolute;width:500px;height:300px;margin:10px;left:15%;z-index:1;} #main-content a {border-bottom:1px solid var(--body);}
 #featured-image {display:block;position:absolute;height:100%;width:85%;left:15%;top:0px;background-image:var(--featured-img-url);background-position:center;background-size:cover;z-index:-1;}
 #top {display:block;position:fixed;width:100%;height:20%;top:0px;left:0px;background-color:var(--accent-one);opacity:var(--opacity-one);}
 #bottom {display:block;position:fixed;width:100%;height:80%;bottom:0px;left:0px;} #bottom::after {content: "";background-color:var(--accent-two);opacity:var(--opacity-two);top: 0;left: 0;bottom: 0;right: 0;position:absolute;}
