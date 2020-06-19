@@ -5,6 +5,7 @@ import LoginComponent from "./LoginComponent"
 import ProfileContainer from "./ProfileContainer"
 import HomeComponent from "./HomeComponent"
 import RegisterComponent from "./RegisterComponent";
+import DetailsComponent from "./DetailsComponent";
 
 class RouterComponent extends React.Component {
   render() {
@@ -33,6 +34,11 @@ class RouterComponent extends React.Component {
             path='/profile/:username'
             exact={true}
             component={ProfileContainer}
+          />
+          <Route
+            path='/profile/:username/:postid'
+            exact={true}
+            component={DetailsComponent}
           />
         </div>
       </BrowserRouter>
