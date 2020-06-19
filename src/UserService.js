@@ -30,10 +30,21 @@ const getCurrentUser = () =>
 const logout = () =>
   fetch("http://localhost:8080/api/logout")
 
+const connect = (userId, connectedId) =>
+  fetch("http://localhost:8080/api/connect", {
+    body: JSON.stringify({user_id: userId, connected_id: connectedId}),
+    headers: {
+      'content-type': 'application/json'
+    },
+    method: 'POST',
+    credentials: "include"
+  }).then(response => response.json())
+
 export default {
   addUser,
   loginUser,
   getAllUsers,
   getCurrentUser,
-  logout
+  logout,
+  connect
 }
