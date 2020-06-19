@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import SearchComponent from "./SearchComponent"
 import UserService from "./UserService"
 library.add(faStroopwafel)
 
@@ -32,7 +33,7 @@ class HomeComponent extends React.Component {
 
           <aside>
             <div id="peachy">
-                <span class="th th-peach-o"></span>
+                <span className="th th-peach-o"></span>
             </div>
             {
               !this.state.loggedIn &&
@@ -53,6 +54,7 @@ class HomeComponent extends React.Component {
 
           <div id="main-content">
             <h1>Connect</h1>
+       <SearchComponent/>
             {
               !this.state.loggedIn &&
               <div id="bio">

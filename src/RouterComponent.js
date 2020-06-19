@@ -5,6 +5,7 @@ import LoginComponent from "./LoginComponent"
 import ProfileContainer from "./ProfileContainer"
 import HomeComponent from "./HomeComponent"
 import RegisterComponent from "./RegisterComponent";
+import DetailsComponent from "./DetailsComponent";
 import FindUsersComponent from "./FindUsersComponent";
 
 class RouterComponent extends React.Component {
@@ -35,7 +36,10 @@ class RouterComponent extends React.Component {
             exact={true}
             component={ProfileContainer}
           />
-
+          <Route
+            path='/profile/:username/:postid'
+            exact={true}
+            component={DetailsComponent}
           <Route
             path='/connect'
             exact={true}
