@@ -3,10 +3,11 @@ import {Link} from "react-router-dom"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import SearchComponent from "./SearchComponent"
 library.add(faStroopwafel)
 
 
-const HomeComponent = () => 
+const HomeComponent = () =>
 <div>
 <div id="featured-image"></div>
 <div id="top"></div>
@@ -14,7 +15,7 @@ const HomeComponent = () =>
 
 <aside>
 <div id="peachy">
-    <span class="th th-peach-o"></span>
+    <span className="th th-peach-o"></span>
 </div>
 <nav>
     <a href="/">home</a>
@@ -25,7 +26,7 @@ const HomeComponent = () =>
 </aside>
  
 <div id="bio">
- 
+    <SearchComponent/>
 <h1>Connect</h1>
 
     <Link to="/login">
@@ -46,4 +47,3 @@ const HomeComponent = () =>
 </div>
 
 export default HomeComponent
-ster
