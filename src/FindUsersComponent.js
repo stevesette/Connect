@@ -24,7 +24,7 @@ class FindUsersComponent extends React.Component {
           {
             this.state.allUsers.map(user =>
               <tr>
-                <td>{user.username}</td>
+                <td><Link to={"/profile/" + user.username}>{user.username}</Link></td>
                 <td>
                   <button onClick={() => service.connect(this.state.currentUser.id, user.id)}>
                     Connect
