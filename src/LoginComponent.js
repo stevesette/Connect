@@ -43,7 +43,7 @@ class LoginComponent extends React.Component {
           className="btn btn-primary"
           onClick={() => {
             UserService.loginUser(this.state.username, this.state.password)
-              .then(status => this.props.history.push('/profile/' + this.state.username))
+              .then(status => this.props.history.push('/'))
           }}>
           Login
         </button>

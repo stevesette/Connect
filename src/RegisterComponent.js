@@ -5,10 +5,17 @@ import UserService from "./UserService"
 class RegisterComponent extends React.Component {
   state = {
     username: '',
-    password: ''
+    password: '',
+    type: ''
   }
 
-  componentDidMount() {
+  register = () => {
+    if(this.state.username === '' || this.state.password === '' || this.state.type === '') {
+      alert("Fill out all of the fields")
+    } else {
+      UserService.addUser(this.state.username, this.state.password, this.state.type)
+        .then(status => this.props.history.push('/'))
+    }
   }
 
   render() {
@@ -25,12 +32,22 @@ class RegisterComponent extends React.Component {
           onChange={(event) => {this.setState({password: event.target.value})}}
           value={this.state.password}
           placeholder="Password"/>
+
+        <div onChange={(event) => this.setState({type: event.target.value})}>
+          <label>
+            <input type="radio" name="user-type" value="influencer"/>
+            Influencer
+          </label>
+          <label>
+            <input type="radio" name="user-type" value="advertiser"/>
+            Advertiser
+          </label>
+        </div>
+        
+        <br></br>
         <button 
           className="btn btn-primary"
-          onClick={() => {
-            UserService.addUser(this.state.username, this.state.password)
-            .then(status => this.props.history.push('/profile/' + this.state.username))
-          }}>
+          onClick={() => this.register()}>
           Register
         </button>
         <Link to='/'>
